@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway Station Navigation</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Add this in your HTML file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="3d-map.js" defer></script>
+
+</head>
+<body>
+  <div id="map"></div>
+  <div id="controls">
+    <label for="start">Your Location:</label>
+    <input type="text" id="start" placeholder="Enter your location">
+    <label for="destination">Destination:</label>
+    <input type="text" id="destination" placeholder="Enter destination">
+    <button onclick="findPath()">Get Directions</button>
+    <p id="path"></p>
+  </div>
+</body>
+</html>
